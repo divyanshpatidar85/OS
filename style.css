@@ -1,107 +1,133 @@
 * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-  }
-  
-  table {
-    position: absolute;
-    top: 10%;
-    bottom: 10%;
-    left: 10%;
-    right: 10%;
-    border: 1px solid #2382c1;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
-    width: 80%;
-    text-align: center;
-    border-collapse: collapse;
-    table-layout: fixed;
-  }
-  
-  th {
-    background-color: #2382c1;
-    color: #ffffff;
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  td {
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  tr:nth-child(odd) {
-    background-color: #eeeeee;
-  }
-  tr:hover {
-  transform: scale(1.01);
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
-  }
-  /* Media query for smaller screens */
-  @media screen and (max-width: 600px) {
-    table {
-      width: 100%;
-    }
-  
-    th,
-    td {
-      display: block;
-    }
-  
-    td {
-      text-align: right;
-      padding: 6px;
-    }
-  
-    td::before {
-      content: attr(data-label);
-      font-weight: bold;
-      display: inline-block;
-      width: 80px;
-    }
-  
-    th,
-    td {
-      border-bottom: none;
-    }
-  }
-  
-.button-7 {
-  background-color: #0095ff;
-  border: 1px solid transparent;
-  border-radius: 3px;
-  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.15385;
   margin: 0;
-  outline: none;
-  padding: 8px 1em;
-  position: relative;
+  padding: 0;
+  outline: 0;
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+header{
+  background-color: #5ab7f5;
+  height: 70px;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table {
+  /* border: 2px solid red; */
+  margin-top: 60px;
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+  border: 1px solid #2382c1;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
   text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  white-space: nowrap;
+  border-collapse: collapse;
+  table-layout: fixed;
+  /* margin-bottom: 500px; */
+} 
+
+th {
+  background-color: #2382c1;
+  color: #ffffff;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+ 
+tr:nth-child(odd) {
+  background-color: #eeeeee;
+} 
+tr:hover {
+transform: scale(1.01);
+box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+/* Media query for smaller screens  */
+@media screen and (max-width: 600px) {
+  table {
+    width: 100%;
+  }
+
+  th,
+  td {
+    display: block;
+  }
+
+  td {
+    text-align: right;
+    padding: 6px;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 80px;
+  }
+
+  th,
+  td {
+    border-bottom: none;
+  }
+}
+
+.button-7 {
+background-color: #0095ff;
+border: 1px solid transparent;
+border-radius: 3px;
+box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+box-sizing: border-box;
+color: #fff;
+cursor: pointer;
+display: inline-block;
+font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+font-size: 13px;
+font-weight: 400;
+line-height: 1.15385;
+margin: 0;
+outline: none;
+padding: 8px 1em;
+position: relative;
+text-align: center;
+text-decoration: none;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+vertical-align: baseline;
+white-space: nowrap;
 }
 
 .button-7:hover,
 .button-7:focus {
-  background-color: #07c;
+background-color: #07c;
 }
 
 .button-7:focus {
-  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
 }
 
 .button-7:active {
-  background-color: #0064bd;
-  box-shadow: none;
+background-color: #0064bd;
+box-shadow: none;
+} 
+footer{
+  background: rgb(192, 190, 190);
+  height: 30px;
+  position: absolute;
+  bottom: -75%;
+  width: 98.8vw;
+  flex-shrink: 0;
+}
+.foot{
+  padding: 6px 0;
+  text-align: center;
 }
